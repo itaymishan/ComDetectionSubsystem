@@ -1,10 +1,5 @@
 #pragma once
 
-//class CCommonTypes
-//{
-//
-//};
-
 struct SMatchTemplateResults
 {
 	int nXLoc;
