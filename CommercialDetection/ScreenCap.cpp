@@ -1,16 +1,6 @@
 #include "ScreenCap.h"
 
 
-ScreenCap::ScreenCap(void)
-{
-
-}
-
-
-ScreenCap::~ScreenCap(void)
-{
-	
-}
 
 /*
 * This function Captures a screen shot
