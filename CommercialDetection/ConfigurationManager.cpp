@@ -65,8 +65,3 @@ ConfigurationManager::ConfigurationManager()
 	}
 
 }
-
-
-ConfigurationManager::~ConfigurationManager()
-{
-}
