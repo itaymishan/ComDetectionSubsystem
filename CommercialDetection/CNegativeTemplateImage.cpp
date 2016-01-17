@@ -4,17 +4,6 @@
 #include "ConfigurationManager.h"
 
 
-CNegativeTemplateImage::CNegativeTemplateImage()
-{
-}
-
-
-CNegativeTemplateImage::~CNegativeTemplateImage()
-{
-	
-}
-
-
 CNegativeTemplateImage::CNegativeTemplateImage(std::string templateImagePath, int expectedXLoc, int expectedYLoc, int tolerance = 1)
 {
 	const char *tmplateImg	= templateImagePath.c_str();
