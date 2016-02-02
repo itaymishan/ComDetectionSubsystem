@@ -11,16 +11,6 @@ ResultHandler::ResultHandler(): m_PosframeHitsInCycle(0), m_framesCheckedInCycle
 }
 
 
-void ResultHandler::Callback(int x)
-{
-
-}
-
-void ResultHandler::ReportDetectionResult(SMatchTemplateResults sMatchTemplateResults)
-{
-
-}
-
 void ResultHandler::ReportDetectionResult(SMatchTemplateResults sMatchPositiveTemplateResults, SMatchTemplateResults sMatchNegativeTemplateResults)
 {
 	//if(m_framesCheckedInCycle >= NUMBER_OF_FRAMES_IN_CYCLE)
