@@ -7,42 +7,18 @@ using namespace std::placeholders;
 
 ResultHandler::ResultHandler(): m_PosframeHitsInCycle(0), m_framesCheckedInCycle(0), m_NegFrameHitsInCycle(0),lCannotFindAnyImageCounter(0)
 {
-	//CController *cntl = new CController();
-	//private_x = 5;
-	//cntl->addHandler(std::bind(&ResultHandler::Callback, this, _1));
+
 }
 
 
 void ResultHandler::Callback(int x)
 {
-    // No longer needs an explicit `instance` argument,
-    // as `this` is set up properly
-    //cout << x + private_x << endl;
+
 }
 
 void ResultHandler::ReportDetectionResult(SMatchTemplateResults sMatchTemplateResults)
 {
-	//if(m_framesCheckedInCycle >= NUMBER_OF_FRAMES_IN_CYCLE)
-	//{
-	//	if(m_PosframeHitsInCycle > 1)
-	//	{
-	//		//printf("m_frameHitsInCycle:[%d]\nm_framesCheckedInCycle:[%d]\n------------------------------\n",m_PosframeHitsInCycle,m_framesCheckedInCycle);
-	//		StateMachine::GetInstance().SetState(eIMAGE_FOUND);
-	//	}
-	//	else
-	//	{
-	//		//printf("m_frameHitsInCycle:[%d]\nm_framesCheckedInCycle:[%d]\n------------------------------\n",m_PosframeHitsInCycle,m_framesCheckedInCycle);
-	//		StateMachine::GetInstance().SetState(eIMAGE_NOT_FOUND);
-	//	}
-	//	m_framesCheckedInCycle	= 0;
-	//	m_PosframeHitsInCycle	= 0;
-	//}
 
-	//if(true == CheckDetectionLocationValidity(sMatchTemplateResults.nXLoc, sMatchTemplateResults.nYLoc, PIXEL_TOLERANCE))
-	//{
-	//	++m_PosframeHitsInCycle;
-	//}
-	//++m_framesCheckedInCycle;
 }
 
 void ResultHandler::ReportDetectionResult(SMatchTemplateResults sMatchPositiveTemplateResults, SMatchTemplateResults sMatchNegativeTemplateResults)
