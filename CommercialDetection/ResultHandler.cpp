@@ -13,47 +13,6 @@ ResultHandler::ResultHandler(): m_PosframeHitsInCycle(0), m_framesCheckedInCycle
 
 void ResultHandler::ReportDetectionResult(SMatchTemplateResults sMatchPositiveTemplateResults, SMatchTemplateResults sMatchNegativeTemplateResults)
 {
-	//if(m_framesCheckedInCycle >= NUMBER_OF_FRAMES_IN_CYCLE)
-	//{
-	//	if(m_PosframeHitsInCycle > 0)
-	//	{
-	//		//printf("m_frameHitsInCycle:[%d]\nm_framesCheckedInCycle:[%d]\n------------------------------\n",m_PosframeHitsInCycle,m_framesCheckedInCycle);
-	//		//printf("Number of Negative:[%d]\nNumber of Positive:[%d]\n", m_NegFrameHitsInCycle, m_PosframeHitsInCycle);
-	//		printf("COMMERCIAL IS OFF!!!\n");
-	//		StateMachine::GetInstance().SetState(eIMAGE_FOUND);
-	//	}
-	//	else
-	//	{
-	//		if(m_NegFrameHitsInCycle > 0)
-	//		{
-	//			//printf("m_frameHitsInCycle:[%d]\nm_framesCheckedInCycle:[%d]\n------------------------------\n",m_PosframeHitsInCycle,m_framesCheckedInCycle);
-	//			//printf("Number of Negative:[%d]\nNumber of Positive:[%d]\n", m_NegFrameHitsInCycle, m_PosframeHitsInCycle);
-	//			printf("COMMERCIAL IS ON!!!\n");
-	//			StateMachine::GetInstance().SetState(eIMAGE_NOT_FOUND);
-	//		}
-	//		else
-	//		{
-	//			printf("Skip cycle - Did not find a match (Pos of Neg)\n");
-	//		}
-	//	}
-	//	printf("Number of Negative:[%d]\nNumber of Positive:[%d]\n", m_NegFrameHitsInCycle, m_PosframeHitsInCycle);
-	//	m_framesCheckedInCycle	= 0;
-	//	m_PosframeHitsInCycle	= 0;
-	//	m_NegFrameHitsInCycle	= 0;
-	//}
-
-	//if((true == CheckDetectionLocationValidity(sMatchPositiveTemplateResults.nXLoc, sMatchPositiveTemplateResults.nYLoc, PIXEL_TOLERANCE)) )
-	//{
-	//	++m_PosframeHitsInCycle;
-	//}
-
-	//if( (true == CheckDetectionLocationValidity(sMatchNegativeTemplateResults.nXLoc, sMatchNegativeTemplateResults.nYLoc, PIXEL_TOLERANCE)) )
-	//{
-	//	++m_NegFrameHitsInCycle;
-	//}
-	//++m_framesCheckedInCycle;
-
-	
 	bool IsPosImageDetected = CheckDetectionLocationValidity(sMatchPositiveTemplateResults.nXLoc, sMatchPositiveTemplateResults.nYLoc, X_POS_LOC_EXPECTED, Y_POS_LOC_EXPECTED, PIXEL_TOLERANCE);
 	bool IsNegImageDetected = CheckDetectionLocationValidity(sMatchNegativeTemplateResults.nXLoc, sMatchNegativeTemplateResults.nYLoc, X_NEG_LOC_EXPECTED, Y_NEG_LOC_EXPECTED, 3);
 
