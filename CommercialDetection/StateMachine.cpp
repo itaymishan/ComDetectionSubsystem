@@ -43,7 +43,6 @@ void StateMachine::SetState(eSTATE eState)
 			std::cout << "\n---------------------------------------------\n Send Commercial Stop!!!\n---------------------------------------------\n" << std::endl;
 			std::cout << buffer << std::endl;
 			m_httpAdapter->SendHttpPostRequestWithData(ConfigurationManager::GetInstance().commercialsUrl, buffer);
-			//m_httpAdapter->SendHttpPostRequestWithData("http://46.121.98.47:7879/comfree/dev/commercials.php", buffer);
 			AppLogger::GetInstance().WriteLogEntry("Send Commercial End");
 		}
 		break;
