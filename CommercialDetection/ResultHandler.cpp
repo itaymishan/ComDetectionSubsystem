@@ -10,7 +10,6 @@ ResultHandler::ResultHandler(): m_PosframeHitsInCycle(0), m_framesCheckedInCycle
 
 }
 
-
 void ResultHandler::ReportDetectionResult(SMatchTemplateResults sMatchPositiveTemplateResults, SMatchTemplateResults sMatchNegativeTemplateResults)
 {
 	bool IsPosImageDetected = CheckDetectionLocationValidity(sMatchPositiveTemplateResults.nXLoc, sMatchPositiveTemplateResults.nYLoc, X_POS_LOC_EXPECTED, Y_POS_LOC_EXPECTED, PIXEL_TOLERANCE);
