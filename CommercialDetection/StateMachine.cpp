@@ -39,7 +39,6 @@ void StateMachine::SetState(eSTATE eState)
 		{
 			printf("Current state is: ePOSITIVE_IMAGE_FOUND_STATE\n");
 			m_eCurrentState = ePOSITIVE_IMAGE_FOUND_STATE;
-			//char * json = "cid=1&start=0";
 			std::string buffer = "cid=" + ConfigurationManager::GetInstance().activeChannel + "&" + "start=0";
 			std::cout << "\n---------------------------------------------\n Send Commercial Stop!!!\n---------------------------------------------\n" << std::endl;
 			std::cout << buffer << std::endl;
