@@ -7,11 +7,6 @@ HttpRequest::HttpRequest()
 	bIsFirstTime = true;
 }
 
-HttpRequest::HttpRequest(std::string Uri)
-{
-
-}
-
 bool HttpRequest::SendHttpPostRequestWithData(std::string url, char *buff)
 {
 	if(false == ConfigurationManager::GetInstance().nSendDetectionsToServer)
