@@ -39,7 +39,6 @@ bool HttpRequest::SendHttpPostRequestWithData(std::string url, char *buff)
 		
 		HTTPResponse res;
 		std::istream& iStr = session.receiveResponse(res);  // get the response from server
-		//std::cerr << iStr.rdbuf();  // dump server response so you can view it
 		printf("\n-----------------------------------\nSend to server Success\n-----------------------------------\n");
 
 	}
@@ -90,7 +89,6 @@ bool HttpRequest::SendHttpPostRequestWithData(std::string url, std::string buff)
 		
 		HTTPResponse res;
 		std::istream& iStr = session.receiveResponse(res);  // get the response from server
-		//std::cerr << iStr.rdbuf();  // dump server response so you can view it
 		printf("\n-----------------------------------\nSend to server Success\n-----------------------------------\n");
 
 	}
