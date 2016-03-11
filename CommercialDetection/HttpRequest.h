@@ -12,7 +12,6 @@
 #include <iostream>
 #include <stdio.h>
 
-
 using Poco::Net::HTTPClientSession;
 using Poco::Net::HTTPRequest;
 using Poco::Net::HTTPResponse;
