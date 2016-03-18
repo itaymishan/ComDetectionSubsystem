@@ -27,7 +27,7 @@
 	<Pos4>
 		<ImagePath>..\Resources\Positive\pos-1.png</ImagePath>
 		<X_LOC>46</X_LOC>
-		<Y_LOC>446</Y_LOC>
+		<Y_LOC>454</Y_LOC>
 		<MAX_TOLERANCE>3</MAX_TOLERANCE>
     </Pos4>
 	<Neg1>
