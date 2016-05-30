@@ -77,10 +77,6 @@ void CNegativeTemplateImage::SetCoordinates()
 			AppLogger::GetInstance().WriteLogEntry(m_templateId + ": EXIT calib mode!!");
 			return;
 		}
-		//if(ConfigurationManager::GetInstance().PrintCoordinates)
-		//{
-		//	std::cout << m_templateId << ":" << "Coords did not change --> (" << m_sCurrentCoordsData.nXLoc << "," << m_sCurrentCoordsData.nYLoc << ")" << "Counter:"<< m_sCurrentCoordsData.lCounter << std::endl;
-		//}
 	}
 	else
 	{
