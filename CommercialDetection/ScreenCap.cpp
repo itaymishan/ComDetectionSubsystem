@@ -1,7 +1,5 @@
 #include "ScreenCap.h"
 
-
-
 /*
 * This function Captures a screen shot
 * returns a cv:Mat representation
