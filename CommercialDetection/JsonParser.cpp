@@ -39,7 +39,6 @@ JsonParser::JsonParser()
 	t.close();
 
 	Var imagePath				= object->get("image_template_file_path");
-	//char *pchImagePath			= imagePath.convert<char[]>();
 	t.close();
 }
 
